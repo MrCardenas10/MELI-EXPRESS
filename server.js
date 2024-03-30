@@ -37,7 +37,6 @@ app.get("/api/items", async (req, res) => {
 
     return res.json(responseData);
     } catch (e) {
-        console.log(e)
         throw new Error("Something went wrong while requesting the information")
     }
 });
@@ -75,7 +74,6 @@ app.get("/api/items/:id", async (req, res) => {
        res.json(formatData)
 
    } catch (e) {
-       console.log(e)
        throw new Error("Something went wrong while requesting the information")
    }
 });
